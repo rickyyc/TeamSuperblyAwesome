@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, width=device-width" /> 
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+		<link rel="stylesheet" href="Styles/Base.css" type="text/css">
+        <link rel="stylesheet" href="Styles/BreadCrumb.css" type="text/css">
+
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+		<script src="js/jquery.easing.1.3.js" type="text/javascript" language="JavaScript">
+        </script>
+        <script src="js/jquery.jBreadCrumb.1.1.js" type="text/javascript" language="JavaScript">
+        </script>
+
+		<script type="text/javascript">
+            jQuery(document).ready(function()
+            {
+                jQuery("#breadCrumb0").jBreadCrumb();
+            })
+        </script>
+	</head>
+	<body>
+		<div data-role="page">
+
+			<div data-role="header">
+				<header>
+				<h1>My Title</h1>
+				</header>
+			</div><!-- /header -->
+
+			<div data-role="content">
+				<nav>
+					<div class="breadCrumbHolder module">
+                <div id="breadCrumb0" class="breadCrumb module">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="weeks.html">Weeks</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+				</nav>
+				<section>
+					<div data-role="collapsible-set">
+						<div data-role="collapsible">
+							<h3><span id="week1"><a href="#week1">Week 1 - Tools and Standards</a></span></h3>
+								<ul>
+									<li>
+										<a href="lecture.html">Lectures</a>
+									</li>
+									<li>
+										<a href="#">Quiz</a>
+									</li>
+									<li>
+										<a href="#">Homework</a>
+									</li>
+								</ul>
+						</div>
+						<div data-role="collapsible">
+							<h3><span id ="week2"><a href="#week2">Week 2 - HTML5</a></span></h3>
+								<ul>
+									<li>
+										<a href="lecture.html">Lectures</a>
+									</li>
+									<li>
+										<a href="#">Quiz</a>
+									</li>
+									<li>
+										<a href="#">Homework</a>
+									</li>
+								</ul>
+						</div>
+						<div data-role="collapsible">
+							<h3><span id="week3"><a href="#week3">Week 3 - CSS Techniques</a></span></h3>
+								<ul>
+									<li>
+										<a href="lecture.html">Lectures</a>
+									</li>
+									<li>
+										<a href="#">Quiz</a>
+									</li>
+									<li>
+										<a href="#">Homework</a>
+									</li>
+								</ul>
+						</div>
+						<div data-role="collapsible">
+							<h3><span id="week4"><a href="#week4">Week 4 - CSS Layouts</a></span></h3>
+								<ul>
+									<li>
+										<a href="lecture.html">Lectures</a>
+									</li>
+									<li>
+										<a href="#">Quiz</a>
+									</li>
+									<li>
+										<a href="#">Homework</a>
+									</li>
+								</ul>
+						</div>
+					</div>
+				</section>
+			</div><!-- /content -->
+		</div><!-- /page -->
+	
+		<footer>
+		</footer>
+	</body>
+</html>
