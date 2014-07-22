@@ -4,22 +4,31 @@ body {
 	padding: 0;
 	float: none;
 	color: black;
-	font: 12pt/15pt Georgia, "Times New Roman", Serif;
+	font: 12pt/15pt Georgia, "Times New Roman", Serif  !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Arial, Verdana, Helvetica, Sans-serif;
 	color: black;
+	font-size: 15pt  !important;
 }
 
 header, nav, aside {
 	display: none;
 }
 
+p {
+	font-size: 12pt  !important;
+}
+
+ul li, ol li {
+    font-size: 12pt  !important;
+}
+
 
 /* Enlarges breadcrumb */
 div.breadCrumbHolder div.breadCrumb div div ul li a {
-	font-size: 150%;
+	font-size: 15pt  !important;
 	color: black !important;
 }
 
@@ -36,7 +45,6 @@ section div.ui-collapsible-set div.ui-collapsible h3.ui-collapsible-heading a sp
 div {
 	display:block !important;
 }
-
 
 /*
 	When print preview viewed using Web Development plugin, jQuery plugin appends extra text around

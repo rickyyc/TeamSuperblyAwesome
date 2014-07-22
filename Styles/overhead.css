@@ -1,0 +1,33 @@
+body {
+	background: none;
+	margin: 0;
+	padding: 0;
+	font-size: 15pt  !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 18pt  !important;
+}
+
+p {
+	font-size: 15pt  !important;
+}
+
+ul li, ol li {
+    font-size: 15pt  !important;
+}
+
+
+/* Enlarges breadcrumb */
+div.breadCrumbHolder div.breadCrumb div div ul li a {
+	font-size: 18pt !important;
+}
+
+/*
+	When print preview viewed using Web Development plugin, jQuery plugin appends extra text around
+	the collapsibles. This gets rid of it.
+*/
+.ui-collapsible-heading-status,
+.ui-loader, .ui-corner-all, .ui-body-a, .ui-loader-default{
+	display: none;
+}
