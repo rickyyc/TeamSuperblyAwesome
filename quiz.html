@@ -8,42 +8,40 @@
 <!--[if lt IE 9]>
     <script src="js/html5shiv.min.js"></script>
 <![endif]-->
-<style>
-.warning{
-	color:red;
-	font-weight:bold;	
-}
-</style>
+<link rel="stylesheet" href="Styles/Base.css" type="text/css">
+<link rel="stylesheet" href="Styles/quiz.css" type="text/css">
 </head>
 <body>
+<div class="quiz_wrapper">
 	<h1>Quiz 08</h1>
-	<div>
-    <form>
-    <p><span id="Q1">1) What does SEO stand for?
-    	(2 marks)</span></p> 
-  	<p><input type="text" name="Q1" style="width:500px" placeholder="Answer..."></p>
-    
-    <p><span id="Q2">2) List at least 5 things you can do to optimize SEO results. (5 marks)</span></p>
-    <p><textarea rows="10" cols="50" name="Q2" placeholder="Answer..."></textarea></p>
-    
-    <p><span id="Q3">3)What does CMS stand for? (1 mark)</span></p>
-    <p>	
-       <input type="radio" name="Q3" value="a">a) Computer Media Server<br>
-		<input type="radio" name="Q3" value="b">b) Content Media Server<br>
-		<input type="radio" name="Q3" value="c">c) Content Management System<br>
-       <input type="radio" name="Q3" value="d">d) Content Management Server
-	</p>
-    <p><span id="Q4">4)Which of the following are considered CMSs? (select all that apply) (2 marks)</span></p>
-    <p>	
-       <input type="checkbox" name="Q4" value="a">a) Joomla<br>
-		<input type="checkbox" name="Q4" value="b">b) GoDaddy<br>
-		<input type="checkbox" name="Q4" value="c">c) Wordpress<br>
-       <input type="checkbox" name="Q4" value="d">d) Google
-	</p>
-    </form>
-    
-  	<input type="submit" id="submit" value="Submit Quiz">
-	</form>
+	<div class="quiz">
+        <form>
+        <p><span id="Q1">1) What does SEO stand for?
+            (2 marks)</span></p> 
+        <p><input type="text" name="Q1" placeholder="Answer..."></p>
+        
+        <p><span id="Q2">2) List at least 5 things you can do to optimize SEO results. (5 marks)</span></p>
+        <p><textarea rows="10" cols="50" name="Q2" placeholder="Answer..."></textarea></p>
+        
+        <p><span id="Q3">3) What does CMS stand for? (1 mark)</span></p>
+        <p>	
+           <input type="radio" name="Q3" value="a">a) Computer Media Server<br>
+            <input type="radio" name="Q3" value="b">b) Content Media Server<br>
+            <input type="radio" name="Q3" value="c">c) Content Management System<br>
+           <input type="radio" name="Q3" value="d">d) Content Management Server
+        </p>
+        <p><span id="Q4">4) Which of the following are considered CMSs? (select all that apply) (2 marks)</span></p>
+        <p>	
+           <input type="checkbox" name="Q4" value="a">a) Joomla<br>
+            <input type="checkbox" name="Q4" value="b">b) GoDaddy<br>
+            <input type="checkbox" name="Q4" value="c">c) Wordpress<br>
+           <input type="checkbox" name="Q4" value="d">d) Google
+        </p>
+        </form>
+        
+        <input type="submit" id="submit" value="Submit Quiz">
+        </form>
     </div>
+</div>
 </body>
 </html>

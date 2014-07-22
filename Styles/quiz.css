@@ -1,0 +1,46 @@
+/***** Page Formatting *****/
+html, body{
+	width:100%;
+	min-width:500px;
+	margin:0;
+}
+
+.quiz_wrapper{
+		width:400px;
+		margin: 0 auto;
+}
+h1{
+	border-bottom: 1px solid;	
+}
+
+/***** Quiz Form & Javascript *****/
+.warning{
+	color:red;
+	font-weight:bold;	
+}
+input[type=text]{
+	width:300px;	
+}
+#submit{
+	float:right;
+	padding: 5px 10px !important;
+	font-size: 1em !important;
+	background-color: #e74c3c;
+	font-weight: bold;
+	text-shadow: 1px 1px #F36C8C;
+	color: #ffffff;
+	border-radius: 75px;
+	-moz-border-radius: 75px;
+	-webkit-border-radius: 75px;
+	border: 1px solid #F36C8C;
+	cursor: pointer;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	transition: .2s;
+}
+#submit:hover{
+	float:right;
+	background-color:#c0392b;
+	transition: .2s;
+}
