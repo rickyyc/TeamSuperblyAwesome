@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, width=device-width" /> 
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+		<link rel="stylesheet" href="Styles/Base.css" type="text/css">
+        <link rel="stylesheet" href="Styles/BreadCrumb.css" type="text/css">
+
+        <style>
+        	.tg  {border-collapse:collapse;border-spacing:0;border-color:#aaa;margin:0px auto;}
+			.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aaa;color:#333;background-color:#fff;border-top-width:1px;border-bottom-width:1px;}
+			.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aaa;color:#fff;background-color:#c0392b;border-top-width:1px;border-bottom-width:1px;text-align:left;}
+			.tg .tg-0ord{text-align:right}
+			.tg .tg-s6z2{text-align:left}
+			.tg .tg-z2zr{background-color:#EEE;width:100%;}
+			.tg .tg-gyqc{background-color:#EEE;text-align:right}
+
+			img{
+				height:1em;
+				margin-left:1em;
+				vertical-align:center;
+			}
+
+			.table_wrapper{
+				width:100%;
+			}
+
+			#fade{
+			    display: none;
+			    position: fixed;
+			    top: 0%;
+			    left: 0%;
+			    width: 100%;
+			    height: 100%;
+			    background-color: #000;
+			    z-index:1001;
+			    -moz-opacity: 0.7;
+			    opacity:.70;
+			    filter: alpha(opacity=70);
+			}
+			#lightbox object{
+				overflow:hidden;
+			    width:400px;
+			    height:300px;
+			}
+			#lightbox{
+			    display: none;
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    width: 400px;
+			    height: 300px;
+			    margin-left: -200px;
+			    margin-top: -150px;                 
+			    padding: 5px;
+			    border: 2px solid #FFF;
+			    background: #FFF;
+			    z-index:1002;
+			    overflow:visible;
+			}
+
+			.lightbox_link{
+				padding: 1px;
+			}
+			.lightbox_link:hover{
+				padding: 0px;
+				border: 1px solid #e74c3c;
+				-webkit-border-radius: 3px;
+				-moz-border-radius: 3px;
+				border-radius: 3px;
+			}
+        </style>
+
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+		<script src="js/jquery.easing.1.3.js" type="text/javascript" language="JavaScript">
+        </script>
+        <script src="js/jquery.jBreadCrumb.1.1.js" type="text/javascript" language="JavaScript">
+        </script>
+        <script src="js/lightbox.js" type="text/javascript" language="JavaScript">
+        </script>
+
+
+		<script type="text/javascript">
+            jQuery(document).ready(function()
+            {
+                jQuery("#breadCrumb0").jBreadCrumb();
+            })
+        </script>
+	</head>
+	<body>
+		<div data-role="page">
+
+			<div data-role="header">
+				<header>
+				<h1>My Title</h1>
+				</header>
+			</div><!-- /header -->
+
+			<div data-role="content">
+				<nav>
+					<div class="breadCrumbHolder module">
+                <div id="breadCrumb0" class="breadCrumb module">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="weeks.html">Weeks</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+				</nav>
+				<section>
+					<div data-role="collapsible-set">
+						<div data-role="collapsible">
+							<h3><span id="quizzes"><a href="#quizzes">Quizzes</a></span></h3>
+								<table class="tg"><!-- Quiz marks -->
+								  <tr>
+								    <th class="tg-031e">Name</th>
+								    <th class="tg-0ord">Score</th>
+								    <th class="tg-031e">Percent</th>
+								    <th class="tg-s6z2">Weight</th>
+								  </tr>
+
+								  <tr>
+								    <td class="tg-z2zr">Quiz 01<img src="Images/grading.png" class="lightbox_link" title="Grade Distribution"><br></td>
+								    <td class="tg-gyqc">8/10</td>
+								    <td class="tg-gyqc">80%</td>
+								    <td class="tg-gyqc">2.5</td>
+								  </tr>
+								  <tr>
+								    <td class="tg-031e">Quiz 02<img src="Images/grading.png" class="lightbox_link" title="Grade Distribution"></td>
+								    <td class="tg-0ord">9/10</td>
+								    <td class="tg-0ord">90%</td>
+								    <td class="tg-0ord">2.5</td>
+								  </tr>
+								  <tr>
+								    <td class="tg-z2zr">Quiz 03<img src="Images/grading.png" class="lightbox_link" title="Grade Distribution"></td>
+								    <td class="tg-gyqc">9/10</td>
+								    <td class="tg-gyqc">90%</td>
+								    <td class="tg-gyqc">2.5</td>
+								  </tr>
+								  <tr>
+								    <td class="tg-031e">Quiz 04<img src="Images/grading.png" class="lightbox_link" title="Grade Distribution"></td>
+								    <td class="tg-0ord">10/10</td>
+								    <td class="tg-0ord">100%</td>
+								    <td class="tg-0ord">2.5</td>
+								  </tr>
+								  <tr>
+								    <td class="tg-z2zr">Quiz 05<img src="Images/grading.png" class="lightbox_link" title="Grade Distribution"></td>
+								    <td class="tg-gyqc">10/10</td>
+								    <td class="tg-gyqc">100%</td>
+								    <td class="tg-gyqc">2.5</td>
+								  </tr>
+								  <tr>
+								    <td class="tg-031e">Quiz 06<img src="Images/grading.png" class="lightbox_link" title="Grade Distribution"></td>
+								    <td class="tg-0ord">8/10</td>
+								    <td class="tg-0ord">80%</td>
+								    <td class="tg-0ord">2.5</td>
+								  </tr>
+								  <tr>
+								    <td class="tg-z2zr">Quiz 07<img src="Images/grading.png" class="lightbox_link" title="Grade Distribution"></td>
+								    <td class="tg-gyqc">7/10</td>
+								    <td class="tg-gyqc">70%</td>
+								    <td class="tg-gyqc">2.5</td>
+								  </tr>
+								  <tr>
+								    <td class="tg-031e">Quiz 08<img src="Images/grading.png" class="lightbox_link" title="Grade Distribution"></td>
+								    <td class="tg-0ord">10/10</td>
+								    <td class="tg-0ord">100%</td>
+								    <td class="tg-0ord">2.5</td>
+								  </tr>
+								</table>
+						</div>
+						<div data-role="collapsible">
+							<h3><span id ="homework"><a href="#homework">Homework</a></span></h3>
+								<table class="tg"><!--Homework marks-->
+								  <tr>
+								    <th class="tg-031e">Name</th>
+								    <th class="tg-0ord">Score</th>
+								    <th class="tg-031e">Percent</th>
+								    <th class="tg-s6z2">Weight</th>
+								  </tr>
+								  <tr>
+								    <td class="tg-z2zr">Homework 01<img src="Images/grading.png" class="lightbox_link" title="Grade Distribution"><br></td>
+								    <td class="tg-gyqc">10/10</td>
+								    <td class="tg-gyqc">100%</td>
+								    <td class="tg-gyqc">3</td>
+								  </tr>
+								  <tr>
+								    <td class="tg-031e">Homework 02<img src="Images/grading.png" class="lightbox_link" title="Grade Distribution"></td>
+								    <td class="tg-0ord">9/10</td>
+								    <td class="tg-0ord">90%</td>
+								    <td class="tg-0ord">3</td>
+								  </tr>
+								  <tr>
+								    <td class="tg-z2zr">Homework 03<img src="Images/grading.png" class="lightbox_link" title="Grade Distribution"></td>
+								    <td class="tg-gyqc">10/10</td>
+								    <td class="tg-gyqc">100%</td>
+								    <td class="tg-gyqc">3</td>
+								  </tr>
+								  <tr>
+								    <td class="tg-031e">Homework 04<img src="Images/grading.png" class="lightbox_link" title="Grade Distribution"></td>
+								    <td class="tg-0ord">10/10</td>
+								    <td class="tg-0ord">100%</td>
+								    <td class="tg-0ord">3</td>
+								  </tr>
+								  <tr>
+								    <td class="tg-z2zr">Homework 05<img src="Images/grading.png" class="lightbox_link" title="Grade Distribution"></td>
+								    <td class="tg-gyqc">10/10</td>
+								    <td class="tg-gyqc">100%</td>
+								    <td class="tg-gyqc">3</td>
+								  </tr>
+								  <tr>
+								    <td class="tg-031e">Homework 06<img src="Images/grading.png" class="lightbox_link" title="Grade Distribution"></td>
+								    <td class="tg-0ord">9/10</td>
+								    <td class="tg-0ord">90%</td>
+								    <td class="tg-0ord">3</td>
+								  </tr>
+								  <tr>
+								    <td class="tg-z2zr">Homework 07<img src="Images/grading.png" class="lightbox_link" title="Grade Distribution"></td>
+								    <td class="tg-gyqc">10/10</td>
+								    <td class="tg-gyqc">70%</td>
+								    <td class="tg-gyqc">3</td>
+								  </tr>
+								  <tr>
+								    <td class="tg-031e">Homework 08<img src="Images/grading.png" class="lightbox_link" title="Grade Distribution"></td>
+								    <td class="tg-0ord">10/10</td>
+								    <td class="tg-0ord">100%</td>
+								    <td class="tg-0ord">3</td>
+								  </tr>
+								</table>
+						</div>
+						<div data-role="collapsible">
+							<h3><span id="exams"><a href="#exams">Exams</a></span></h3>
+								<!--Exam mark table-->
+							<table class="tg"><!--Exam Marks-->
+							  <tr>
+							    <th class="tg-031e">Name</th>
+							    <th class="tg-0ord">Score</th>
+							    <th class="tg-031e">Percent</th>
+							    <th class="tg-s6z2">Weight</th>
+							  </tr>
+							  <tr>
+							    <td class="tg-z2zr">Written</td>
+							    <td class="tg-gyqc">*/25</td>
+							    <td class="tg-gyqc">*</td>
+							    <td class="tg-gyqc">25</td>
+							  </tr>
+							  <tr>
+							    <td class="tg-031e">Practical</td>
+							    <td class="tg-0ord">*/25</td>
+							    <td class="tg-0ord">*</td>
+							    <td class="tg-0ord">25</td>
+							  </tr>
+							</table>
+						</div>
+					</div>
+				</section>
+			</div><!-- /content -->
+		</div><!-- /page -->
+
+		<div id="lightbox"><!--Show grades-->
+		</div>
+		<div id="fade"></div> 
+	
+		<footer>
+		</footer>
+	</body>
+</html>
