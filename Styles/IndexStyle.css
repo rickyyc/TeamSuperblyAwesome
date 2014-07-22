@@ -9,11 +9,11 @@ a:visited {
 }
 
 a:hover {
-    text-decoration: bold;
+    font-weight: bold;
 }
 
 a:active {
-    text-decoration: bold;
+    font-weight: bold;
 }
 
 
@@ -38,7 +38,7 @@ p{
 
 
 html{
-		background: url("http://kasian.com/sites/default/files/imagecache/project-landing-1200x754/Boland-BCIT-0400_composite-notruck.jpg") 100% 0 repeat fixed;
+	background: url("http://kasian.com/sites/default/files/imagecache/project-landing-1200x754/Boland-BCIT-0400_composite-notruck.jpg") 100% 0 repeat fixed;
 	background-size: cover;
 }
 
