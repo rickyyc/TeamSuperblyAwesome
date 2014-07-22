@@ -17,7 +17,7 @@ a:active {
 }
 
 
-h1, h2, h3 { 
+h1, h2, h3, p{ 
 	font-family: 'Open Sans', Arial, sans-serif; 
 	text-align: center;
 }
@@ -25,30 +25,33 @@ h1, h2, h3 {
 h1 {
 	color: #666666;
 	font-size: 72px;
-	font-weight: 100;
+	font-weight: 300;
 }
-
-
 
 h3 {
 	color: #aaaaaa;
 }
 
+p{
+
+}
+
+
+html{
+		background: url("http://kasian.com/sites/default/files/imagecache/project-landing-1200x754/Boland-BCIT-0400_composite-notruck.jpg") 100% 0 repeat fixed;
+	background-size: cover;
+}
 
 
 #page {
    border-collapse: collapse;
 }
 
-.main-header{
 
-	background: url("http://kasian.com/sites/default/files/imagecache/project-landing-1200x754/Boland-BCIT-0400_composite-notruck.jpg") 20% 0 repeat fixed;
-	background-size: cover;
-
-}
 
 .top-section h1 {
 	color: white;
+	padding-bottom: 30px;
 }
 
 .bcit-h1{
@@ -56,80 +59,29 @@ h3 {
 	font-weight: 700;
 }
 
-.footer{
-	clear: both;
-	padding-top: 100px;
-	height:60px;
-	background: none repeat scroll 0 0 #666666;
-
-}
-
 .top-section{
 	padding: 3.66667rem 0;
-	background: rgba(22, 160, 133,0.5);
-	padding-bottom: 175px;
+	background: rgba(22, 160, 133,.9);
+	padding-bottom: 225px;
 
 }
+
+
+/*PROFILE*********************************************/
 
 .about{
 	clear: both;
 	padding-bottom: 300px;
+	margin-top: -20px;
+	padding-top: 30px;
+	background-color: white;
 }
-
 
 .container{
 	clear: both;
-	background-color: #FFFFFF;
 	padding-top: 30px;
 }
 
-/****Project link***/
-
-.project{
-	clear: both;
-	background: none repeat scroll 0 0 #16a085;
-	padding-bottom: 100px;
-	float:left;
-	width: 100%;
-}
-
-.project h1{
-	color: white;
-}
-
-.project h3 a{
-	color: white;	
-	border-radius: 5px;
-	padding: 7px;
-	background-color: #f3bc32;
-	border: 2px solid white;
-
-}
-
-.project h3 a:hover{
-	background-color: #f39c12;
-}
-
-.p-description{
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-	color: #ddd;
-	padding-top: 20px;
-
-}
-
-
-/*Sites*/
-
-.sites{
-	clear: both;
-	background: none repeat scroll 0 0 #F1F1F1;
-	padding-bottom: 100px;
-	float:left;
-	width: 100%;
-
-}
 
 .three-col-container{
 	width: 978px;
@@ -141,7 +93,6 @@ h3 {
 .col1, .col2, .col3{
 	float: left;
 	width: 33%;
-	background-color: #FFFFFF;
 }
 
 .profile-pic{
@@ -151,23 +102,98 @@ h3 {
 	border: 6px solid #f3bc32;
 }
 
+.profile-pic:hover{
+	border: 6px solid #16a085;
+	background: rgba(22, 160, 133,0.8);
+}
+
 .profile-pic-section{
 	margin-left: 85px;
 	margin-right: auto;
 }
 
 
-/*RATIONALE*/
+/*RATIONALE*******************************************/
 
 .rationale{
 	clear: both;
-	background: none repeat scroll 0 0 #DDDDDD;
+	padding-bottom: 100px;
+	float:left;
+	width: 100%;
+	background: rgba(20, 20, 20,.5);
+}
+
+.rationale h1{
+	color: white;
+}
+
+.p-description{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+	padding: 30px;
+	background: white;
+
+
+}
+
+
+
+/****Project link****************************************/
+
+.project{
+	clear: both;
+	background: none repeat scroll 0 0 #16a085;
+	float:left;
+	width: 100%;
+	padding:125px 0;
+
+
+}
+
+.project h1{
+	color: white;
+	margin-top: -20px;
+}
+
+.project h3 a, .top-section h3 a{
+	color: white;	
+	border-radius: 5px;
+	padding: 7px;
+	background-color: #f3bc32;
+	border: 2px solid white;
+
+}
+
+.project h3 a:hover, .top-section h3 a:hover{
+	background-color: #f39c12;
+}
+
+
+
+
+/*SITEMAP**********************************************/
+
+.sites{
+	clear: both;
+	background: none repeat scroll 0 0 #F1F1F1;
 	padding-bottom: 100px;
 	float:left;
 	width: 100%;
 
 }
 
+.sites a:hover{
+	color: #16a085;
+}
+
+.footer{
+	clear: both;
+	height:40px;
+	background: none repeat scroll 0 0 #666666;
+
+}
 
 
 .body{
