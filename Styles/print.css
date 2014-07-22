@@ -1,0 +1,54 @@
+body {
+	background: none;
+	margin: 0;
+	padding: 0;
+	float: none;
+	color: black;
+	font: 12pt/15pt Georgia, "Times New Roman", Serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Verdana, Helvetica, Sans-serif;
+	color: black;
+}
+
+header, nav, aside {
+	display: none;
+}
+
+
+/* Enlarges breadcrumb */
+div.breadCrumbHolder div.breadCrumb div div ul li a {
+	font-size: 150%;
+	color: black !important;
+}
+
+/*
+	Blackens collapsible text
+*/
+section div.ui-collapsible-set div.ui-collapsible h3.ui-collapsible-heading a span span span a {
+	color: black;
+}
+
+/*
+	Opens up all the collapsibles
+*/
+div {
+	display:block !important;
+}
+
+
+/*
+	When print preview viewed using Web Development plugin, jQuery plugin appends extra text around
+	the collapsibles. This gets rid of it.
+*/
+.ui-collapsible-heading-status,
+.ui-loader, .ui-corner-all, .ui-body-a, .ui-loader-default{
+	display: none;
+}
+
+a[href^="http"]:link:after, 
+a[href^="http"]:visited:after{
+   content: " (URL: " attr(href) ") ";
+   font-size: 90%;
+}
