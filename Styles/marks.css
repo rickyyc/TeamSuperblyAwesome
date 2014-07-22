@@ -1,0 +1,65 @@
+
+/************ Table formatting for marks display ************/
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#aaa;margin:0px auto;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aaa;color:#333;background-color:#fff;border-top-width:1px;border-bottom-width:1px;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aaa;color:#fff;background-color:#c0392b;border-top-width:1px;border-bottom-width:1px;text-align:left;}
+.tg .tg-0ord{text-align:right}
+.tg .tg-s6z2{text-align:left}
+.tg .tg-z2zr{background-color:#EEE;width:100%;}
+.tg .tg-gyqc{background-color:#EEE;text-align:right}
+
+img{
+	height:1em;
+	margin-left:1em;
+	vertical-align:center;
+}
+
+.table_wrapper{
+	width:100%;
+}
+
+/************ CSS for lightbox implementation ************/
+#fade{
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index:1001;
+    -moz-opacity: 0.7;
+    opacity:.70;
+    filter: alpha(opacity=70);
+}
+#lightbox object{
+	overflow:hidden;
+    width:400px;
+    height:300px;
+}
+#lightbox{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 300px;
+    margin-left: -200px;
+    margin-top: -150px;                 
+    padding: 5px 5px 0 5px;
+    border: 2px solid #FFF;
+    background: #FFF;
+    z-index:1002;
+    overflow:visible;
+}
+
+.lightbox_link{
+	padding: 1px;
+}
+.lightbox_link:hover{
+	padding: 0px;
+	border: 1px solid #e74c3c;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
