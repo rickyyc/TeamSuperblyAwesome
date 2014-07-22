@@ -17,6 +17,13 @@ ul li, ol li {
     font-size: 15pt  !important;
 }
 
+/*
+	Opens up all the collapsibles
+*/
+div {
+	display:block !important;
+}
+
 
 /* Enlarges breadcrumb */
 div.breadCrumbHolder div.breadCrumb div div ul li a {
@@ -29,5 +36,9 @@ div.breadCrumbHolder div.breadCrumb div div ul li a {
 */
 .ui-collapsible-heading-status,
 .ui-loader, .ui-corner-all, .ui-body-a, .ui-loader-default{
+	display: none;
+}
+
+html.ui-mobile body.ui-mobile-viewport.ui-overlay-c div.ui-loader.ui-corner-all.ui-body-a.ui-loader-default span.ui-icon.ui-icon-loading {
 	display: none;
 }
