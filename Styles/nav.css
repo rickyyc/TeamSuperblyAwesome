@@ -1,0 +1,40 @@
+#logo{
+	margin-left: 10px;
+	font-family: 'Play', sans-serif;
+}
+
+
+
+.nav{
+	position:absolute;
+	top:20px;
+	right:5%;
+	float:left;
+}
+
+.nav-list, .nav-list-selected{		
+
+	display: inline-block;
+	margin-left: 20px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid white;
+}
+
+.nav-list-selected{		
+
+	color: #16a085;
+	border-bottom: 3px solid #16a085;
+
+}
+
+
+
+/**HOVER**/
+.nav-list:hover{
+	color:#16a085;
+	border-bottom: 1px solid #16a085;
+}
+
+#logo:hover{
+	color: #16a085;
+};
